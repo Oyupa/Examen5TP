@@ -1,0 +1,12 @@
+Libro;La comunidad del anillo;J.R.R. Tolkien;Artemis;1001
+Libro;Las dos torres;J.R.R. Tolkien;Artemis;1002
+Libro;El retorno del rey;J.R.R. Tolkien;Artemis;1003
+Libro;El hobbit;J.R.R. Tolkien;Artemis;1004
+Libro;El silmarillion;J.R.R. Tolkien;Artemis;1005
+Revista;National Geographic;2001
+Revista;CSIC;2002
+Revista;Prisma Social;2003
+Periodico;El Pais;2002-05-05;3001
+Periodico;El Mundo;1988-05-05;3002
+Periodico;ABC;2024-01-01;3003
+
