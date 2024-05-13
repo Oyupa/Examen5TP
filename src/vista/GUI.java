@@ -18,6 +18,7 @@ public class GUI {
     private JTextArea textArea1;
 
     public GUI() {
+        this.coleccionMediosDigitales = new ColeccionMediosDigitales();
         this.coleccionMediosDigitales = FileManager.leerMediosDigitales();
 
         this.libroButton.addActionListener(new ActionListener() {
