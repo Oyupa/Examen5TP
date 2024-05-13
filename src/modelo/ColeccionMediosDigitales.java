@@ -13,7 +13,13 @@ public class ColeccionMediosDigitales {
     }
 
     public void agregarMedioDigital(MedioDigital medioDigital) {
-        mediosDigitales.add(medioDigital);
+        if (medioDigital instanceof Revista) {
+            mediosDigitales.add((Revista) medioDigital);
+        } else if (medioDigital instanceof Periodico) {
+            mediosDigitales.add((Periodico) medioDigital);
+        } else if (medioDigital instanceof Libro) {
+            mediosDigitales.add((Libro) medioDigital);
+        }
     }
 
     public void eliminarMedioDigital(MedioDigital medioDigital) {
