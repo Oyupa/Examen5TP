@@ -9,7 +9,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class GUI {
-    private ColeccionMediosDigitales coleccionMediosDigitales;
+    private static ColeccionMediosDigitales coleccionMediosDigitales;
     private JLabel textoInicial;
     private JButton revistaButton;
     private JButton periodicoButton;
@@ -18,8 +18,7 @@ public class GUI {
     private JTextArea textArea1;
 
     public GUI() {
-        this.coleccionMediosDigitales = new ColeccionMediosDigitales();
-        this.coleccionMediosDigitales = FileManager.leerMediosDigitales();
+
 
         this.libroButton.addActionListener(new ActionListener() {
             @Override
@@ -34,6 +33,7 @@ public class GUI {
             }
         });
         this.periodicoButton.addActionListener(new ActionListener() {
+
             @Override
             public void actionPerformed(ActionEvent e) {
                 StringBuilder sb = new StringBuilder();
@@ -60,6 +60,9 @@ public class GUI {
     }
 
     public static void main(String[] args) {
+
+        //coleccionMediosDigitales = new ColeccionMediosDigitales();
+        //coleccionMediosDigitales = FileManager.leerMediosDigitales();
         JFrame frame = new JFrame("GUI");
         frame.setContentPane(new GUI().panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
